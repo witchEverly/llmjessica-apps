@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apps - LLMjessica.com</title>
+    <title>Apps ✨ LLMjessica.com</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon_2.ico">
+<!--    <link rel="mask-icon" href="images/favicon_2.svg">-->
+<!--    <link rel="apple-touch-icon" href="images/favicon_2.png">-->
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -14,7 +17,7 @@
             line-height: 1.6;
         }
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 10px auto;
             padding: 40px;
             background-color: #1f1e33;
@@ -26,32 +29,35 @@
         }
         .intro {
             text-align: center;
-            font-size: 1.3em;
-            margin: 20px;
+            font-size: 1.4em;
+            margin: 10px;
+            font-style: italic;
         }
         .quote-section {
             text-align: center;
             font-size: 1.2em;
-            margin: 10px;
+            margin: 20px;
         }
         .content {
             text-align: center;
             margin: 20px;
         }
-        .app-list {
-            list-style: none;
-            padding: 0;
+        .subdomain-container {
+            background-color: #3a1b35; /* Lighter Purple Background */
+            padding: 20px;
+            border: 1px solid #d3d3d3; /* Whitish-grey outline */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+            border-radius: 10px;
             text-align: center;
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
         }
-        .app-list li {
-            margin: 20px 0;
-        }
-        .app-list a {
+        .subdomain-container a {
             color: #fe428e; /* Radical Pink */
             text-decoration: none;
-            font-size: 1.2em;
         }
-        .app-list a:hover {
+        .subdomain-container a:hover {
             text-decoration: underline;
         }
         .footer {
@@ -74,23 +80,28 @@
 <body>
     <div class="container">
         <header>
-            <h1>User Interface Applications</h1>
-            <h2><i>✨ LLMjessica.com</i> ✨</h2>
-            <p class="intro">Generative and Discriminative Artificial Intelligence Applications</p>
-            <p class='quote-section'>Click on the links below to explore applications I have developed.</p>
+            <h1><i>✨User Interface Applications</i> ✨</h1>
+<!--            <p class="intro">Generative and Discriminative Artificial Intelligence Applications</p>-->
+            <p class='intro'>Click on the links below to explore applications I have developed.</p>
         </header>
-        <br>
-        <div class="content">
-            <ul class="app-list">
-                <li>
-                    <p><strong><a href="ai_caption_generator.html">🔗 A.I. Instagram Caption Generator</a></strong></p>
-                    <p>
-                        <strong>
-                            An artificial intelligence application that generates Instagram captions using Salesforce's BLIP-2 (Bi-directional LSTM with Image Processing) model and Google's Gemini API. Combines image processing and natural language understanding to generate captions for images.
-                        </strong>
-                    </p>
-                </li>
-            </ul>
+        <div class="subdomain-container">
+            <h2>
+                <a href="ai_caption_generator.html">🔗 A.I. Instagram Caption Generator</a>
+            </h2>
+            <p class="quote-section">
+                An artificial intelligence application that generates Instagram captions using Salesforce's BLIP-2 (Bi-directional LSTM with Image Processing) model and Google's Gemini API. Combines image processing and natural language understanding to generate captions for images.
+            </p>
+        </div>
+        <div class="subdomain-container">
+            <h2>
+                <a href="https://llmjessica.com/ProbabilityandStatistics/">🔗 A Guide to Probability and Statistics</a>
+            </h2>
+            <p class="quote-section">
+                    Published using Bookdown, this book for probability the definitions for common probability distributions,
+                    theorems from axiomatic definitions of probability, and general formulas from combinatorics.
+                    If you like the book, you can check out the source code on GitHub and give it a start!
+            </p>
+            <p>Source Code Available: <a href="https://github.com/witchEverly/ProbabilityandStatistics">GitHub</a></p>
         </div>
     </div>
     <footer class="footer">
